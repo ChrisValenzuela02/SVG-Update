@@ -1,0 +1,155 @@
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #111;
+    background: url("svgs/background.svg") #edeff0;
+    background-size: auto 45px, cover;
+  }
+  
+  #container {
+    max-width: 960px;
+    background: #fff;
+    margin: 0 auto;
+  }
+  
+  p {
+    max-width: 350px;
+    margin: 35px auto 0;
+    line-height: 2em;
+    text-align: left;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #39add1;
+    font-weight: 700;
+  }
+
+  .nav-item{
+    margin: auto 10px;
+  }
+
+  .nav-item:hover *{
+    color:#111;
+    fill: #111;
+    transition: all .2s ease-in-out; 
+    transform: scale(1.04);
+    transform-origin: center center;
+  }
+
+  .nav-img{
+    height: 13px;
+    fill: #39add1;
+    transform-origin: center center;
+  }
+  
+  .nav{
+    display:flex;
+    padding-top: 26px;
+    padding-left: 40px;
+    margin-bottom: 66px;
+  }
+  
+  .nav a{
+    padding-top: 12px;
+    font-weight:700;
+  }
+  
+  header {
+    padding-top: 10px;
+  }  
+  
+  header h1 {
+   line-height: 1em;
+  }
+  
+  .logo{
+   height: 120px;
+  }
+
+  .alternate-header{
+    display: none;
+  }
+
+  .paw:hover{
+    transform-origin: 50% 50%;
+    animation: rotate_scale 1.5s 0.9s ease-out;
+  }
+  
+  main {
+    padding-top: 50px;
+  }
+
+  main h2 {
+    font-size: 28px;
+  }
+
+  main ul {
+    padding: 0;
+  }
+
+  main li {
+    display: inline-block;
+    color: #ba8058;
+    margin-right: 20px;
+  }
+
+  main li img {
+    height: 170px;
+    margin-bottom: 15px;
+  }
+
+  main li span {
+    margin-left: -40px;
+  }
+  main li:last-child {
+    margin-right: 0;
+  }
+
+  .corgi{
+    transform: rotate(0deg) scale(1);
+    transition: transform .2s;
+  }
+
+  .corgi:hover{
+    transform: rotate(20deg) scale(1.1);
+    transition: transform .2s;
+  }
+  
+  footer {
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    color: #ba8058;
+  }
+  
+  @media screen and (max-width: 420px){
+  
+    .st1{
+      opacity: 0;
+    }
+  
+    .alternate-header{
+      display: block;
+      color: #EAAA7F;
+      margin: 0;
+      font-size: 20px;
+    }
+    
+}
+
+/*Keyframes*/
+@keyframes rotate_scale { 
+  50%{
+    transform: rotate(360deg);
+  }
+  95%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
